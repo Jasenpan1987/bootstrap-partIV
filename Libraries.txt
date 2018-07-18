@@ -5,4 +5,4 @@ Library4 - Central Library of Vancouver, Canada
 Library5 - Library of Congress, Washington, D.C.
 Library6 - New York Public Library (Stephen A. Schwarzman Building)
 Library7 - Marciana Library, Venice
-Library8 - Seattle Public Library’s Central Library
+Library8 - Seattle Public Libraryï¿½s Central Library

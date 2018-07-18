@@ -1,3 +1,8 @@
+body {
+  font-family: Arial, Helvetica, sans-serif !important;
+  overflow-x: hidden;
+}
+
 /* header start */
 header {
   height: 100vh;
@@ -35,3 +40,54 @@ header {
   }
 }
 /* header ends  */
+
+/* common-title start */
+.common-title {
+  display: inline-block;
+  font-size: 3rem;
+  font-weight: 500;
+  text-shadow: 2px 2px 5px #aaa;
+  transition: all 0.5s;
+}
+
+.common-title::first-letter {
+  font-family: "Great Vibes", cursive;
+  font-size: 5rem;
+  margin-right: 10px;
+  font-style: normal;
+}
+
+.common-title:hover {
+  transform: translate(-5px, -3px);
+  text-shadow: 2px 5px 20px #aaa;
+}
+/* common-title ends  */
+
+/* gallary start */
+.gallary-img {
+  backface-visibility: hidden;
+  transition: all 0.5s;
+}
+
+.gallary-img:hover {
+  transform: scale(1.1);
+}
+
+.first-row {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.second-row {
+  transform: translateX(300px);
+  opacity: 0;
+  transition: all 2s;
+}
+
+.rowin.first-row,
+.rowin.second-row {
+  transform: translateX(0);
+  opacity: 1;
+}
+/* gallary ends  */
