@@ -3,6 +3,84 @@ body {
   overflow-x: hidden;
 }
 
+/* navigation start */
+.hamburger-menu {
+  width: 65px;
+  height: 65px;
+  background: #7f7b82;
+  position: fixed;
+  z-index: 102;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  outline: none !important;
+  transition: all 0.6s;
+}
+
+.line-one,
+.line-two,
+.line-three {
+  width: 30px;
+  height: 2px;
+  background: #eee;
+  margin: 5px;
+  transition: all 0.6s;
+}
+
+.change .line-one {
+  transform: rotate(-405deg) translate(-5px, 5px);
+  background: #777;
+}
+
+.change .line-two {
+  opacity: 0;
+}
+
+.change .line-three {
+  transform: rotate(405deg) translate(-5px, -5px);
+  background: #777;
+}
+
+.change .hamburger-menu {
+  background: #eef0eb;
+}
+
+.bg-cover {
+  background: rgba(35, 37, 40, 0.98);
+  width: 55px;
+  height: 55px;
+  position: fixed;
+  z-index: 99;
+  top: 35px;
+  right: 35px;
+  border-radius: 50%;
+  transition: all 0.8s;
+}
+
+.change .bg-cover {
+  transform: scale(150);
+}
+
+.nav-content {
+  position: fixed;
+  z-index: 101;
+  width: 100%;
+}
+
+.link-item {
+  font-size: 20px;
+  color: #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.link-item:hover {
+  color: #fff;
+  border-bottom: 1px solid #fff;
+  border-radius: 50% 50% 0 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+/* navigation ends  */
+
 /* header start */
 header {
   height: 100vh;
